@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://b88cvdio8xmtl"]
+
+[ext_resource type="Texture2D" uid="uid://j0puo7t0djsp" path="res://Textures&Materials/GreyBrick.png" id="1_0ouoc"]
+[ext_resource type="Texture2D" uid="uid://d0c3m4qkik7rg" path="res://Textures&Materials/GreyBrickNormal.png" id="2_n14gt"]
+
+[resource]
+albedo_texture = ExtResource("1_0ouoc")
+roughness = 0.9
+normal_enabled = true
+normal_texture = ExtResource("2_n14gt")
+uv1_scale = Vector3(4, 4, 4)

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://u13coyg6nbcs"]
+
+[ext_resource type="Texture2D" uid="uid://blqy2g8b1j27d" path="res://Textures&Materials/BrownBricks.png" id="1_pfks3"]
+[ext_resource type="Texture2D" uid="uid://csmcafovo2ujq" path="res://Textures&Materials/BrownBricksNormal.png" id="2_y8f48"]
+
+[resource]
+albedo_texture = ExtResource("1_pfks3")
+normal_enabled = true
+normal_texture = ExtResource("2_y8f48")
+uv1_scale = Vector3(4, 4, 4)

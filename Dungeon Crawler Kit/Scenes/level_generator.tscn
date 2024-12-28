@@ -1,0 +1,19 @@
+[gd_scene load_steps=7 format=3 uid="uid://daut34sv5qgi8"]
+
+[ext_resource type="Script" path="res://Scripts/LevelGenerator.gd" id="1_0tn6f"]
+[ext_resource type="TileSet" uid="uid://cf2jov4kdnn0y" path="res://Textures&Materials/MapCreatorTiles.tres" id="2_b8gnk"]
+[ext_resource type="PackedScene" uid="uid://bv6g8mhp1gj8b" path="res://Scenes/Cells/GreyBrick.tscn" id="2_fkt03"]
+[ext_resource type="PackedScene" uid="uid://bfpgfvlhrm13c" path="res://Scenes/Cells/BrownBrick.tscn" id="3_sjdkp"]
+[ext_resource type="PackedScene" uid="uid://dlnd3twp430t1" path="res://Scenes/Cells/Cobble.tscn" id="4_heb05"]
+[ext_resource type="Script" path="res://Scenes/GridMap.gd" id="6_y1avd"]
+
+[node name="LevelGenerator" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000515223, 0.00268304, -0.00208282)
+script = ExtResource("1_0tn6f")
+CellScenes = Array[Resource]([ExtResource("2_fkt03"), ExtResource("3_sjdkp"), ExtResource("4_heb05")])
+
+[node name="Map" type="TileMap" parent="."]
+tile_set = ExtResource("2_b8gnk")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 4, 0, 1, 4, 0, 2, 4, 0, 3, 4, 0, 65536, 4, 0, 131072, 4, 0, 196608, 4, 0, 262144, 4, 0, 65537, 4, 0, 65538, 65540, 0, 131073, 65540, 0, 196609, 65540, 0, 262145, 65540, 0, 65539, 65540, 0, 4, 65540, 0, -65532, 65540, 0, -65533, 65540, 0, -65534, 65540, 0, -65535, 65540, 0, -65536, 65540, 0, 196610, 131076, 0, 196611, 131076, 0, 196612, 131076, 0, 196613, 131076, 0, 131077, 65540, 0, 131078, 65540, 0, 196614, 65540, 0, 262150, 65540, 0, 262149, 65540, 0, 196615, 4, 0, 131079, 4, 0, 65543, 4, 0, 65542, 4, 0, 65541, 4, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 262151, 4, 0, 262147, 4, 0, 327683, 4, 0, 393218, 65540, 0, 393219, 65540, 0, 458755, 65540, 0, 458754, 65540, 0, 196607, 65540, 0, 196606, 65540, 0, 196605, 65540, 0, 131069, 131076, 0, 131068, 131076, 0, 196604, 131076, 0, 262140, 131076, 0, 262141, 131076, 0)
+script = ExtResource("6_y1avd")

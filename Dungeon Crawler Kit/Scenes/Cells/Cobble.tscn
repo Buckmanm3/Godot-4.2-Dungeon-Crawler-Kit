@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://dlnd3twp430t1"]
+
+[ext_resource type="Script" path="res://Scripts/Cell.gd" id="1_clagi"]
+[ext_resource type="Material" uid="uid://cc3oqhrcs067k" path="res://Textures&Materials/FloorRoof.tres" id="2_034qq"]
+[ext_resource type="Material" uid="uid://fkoag8woipmt" path="res://Textures&Materials/CobbleWall.tres" id="3_ls7og"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ht3r1"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_clagi")
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.000323067, -0.000178297, 0.5, 0.000373214, 0.5, 0.000178538, -0.5, 0.00037333, -0.000322934, 0, 0, 0)
+material_override = ExtResource("2_034qq")
+mesh = SubResource("PlaneMesh_ht3r1")
+
+[node name="Roof" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.18557e-08, -1.91069e-15, 0.5, -4.37114e-08, -0.5, 0, 0.5, -4.37114e-08, -2.18557e-08, 0, 1, 0)
+material_override = ExtResource("2_034qq")
+mesh = SubResource("PlaneMesh_ht3r1")
+
+[node name="Front" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, -5.32907e-15, -2.18557e-08, -2.18557e-08, 9.55343e-16, -0.5, 5.32907e-15, 0.5, 9.55343e-16, -2.18557e-08, 0.5, -0.5)
+material_override = ExtResource("3_ls7og")
+mesh = SubResource("PlaneMesh_ht3r1")
+
+[node name="Back" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, -4.37114e-08, -2.18557e-08, 2.18557e-08, 9.55343e-16, -0.5, 4.37114e-08, -0.5, 9.55343e-16, 2.18557e-08, 0.5, 0.5)
+material_override = ExtResource("3_ls7og")
+mesh = SubResource("PlaneMesh_ht3r1")
+
+[node name="Left" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-08, 0.5, -2.18557e-08, 0, -2.18557e-08, -0.5, -0.5, -2.18557e-08, 9.55343e-16, -0.5, 0.5, 2.18557e-08)
+material_override = ExtResource("3_ls7og")
+mesh = SubResource("PlaneMesh_ht3r1")
+
+[node name="Right" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-08, -0.5, -2.18557e-08, 0, -2.18557e-08, 0.5, -0.5, 2.18557e-08, 9.55343e-16, 0.5, 0.5, -2.18557e-08)
+material_override = ExtResource("3_ls7og")
+mesh = SubResource("PlaneMesh_ht3r1")
